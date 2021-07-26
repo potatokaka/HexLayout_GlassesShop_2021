@@ -4,9 +4,212 @@ layout: ./app/layout.ejs
 engine: ejs
 current: index
 ---
+<main>
+	<!-- heroBanner -->
+	<section class="heroBanner d-flex align-items-center">
+		<div class="container text-right">
+			<p class="slogan">Promise-Desert 2020 早春系列</p>
+			<h2 class="h2">看得清，才能看得</h2>
+		</div>
+	</section>
+	<!-- feature -->
+	<section class="feature bg-info text-center">
+		<div class="container">
+			<h3 class="h3">用專業的心，做專業的事</h3>
+			<ul class="feature__list d-flex justify-content-between fw-wrap">
+				<li class="feature__item">
+					<span class="material-icons-outlined feature__icon">paid</span>
+					<!-- <img class="mb-7" src="assets/images/icon-dollar.svg" alt="icon-dollar"> -->
+					<h5 class="h5 mb-2">單一價格</h5>
+					<p class="text-left text-black">無論任何度數皆不需追加費用即可擁有適合自己的薄型球面鏡片。</p>
+				</li>
+				<li class="feature__item">
+					<span class="material-icons-outlined feature__icon">schedule</span>
+					<!-- <img class="mb-7" src="assets/images/icon-clock.svg" alt="icon-clock"> -->
+					<h5 class="h5 mb-2">20 分鐘即可取件</h5>
+					<p class="text-left text-black">為了您的寶貴時間著想，以豐富專業知識與技術將結帳到交件的時間縮減至最快 20 分鐘即可完成。</p>
+				</li>
+				<li class="feature__item">
+					<span class="material-icons-outlined feature__icon">favorite_border</span>
+					<!-- <img class="mb-7" src="assets/images/icon-heart.svg" alt="icon-heart"> -->
+					<h5 class="h5 mb-2">安心售後服務</h5>
+					<p class="text-left text-black">我們提供長達 120 天的保固售後服務，不限會員資格皆享有免費深層保養及專業維修服務。</p>
+				</li>
+				<li class="feature__item">
+					<span class="material-icons-outlined feature__icon">voicemail</span>
+					<!-- <img class="mb-7" src="assets/images/icon-glasses.svg" alt="icon-glasses"> -->
+					<h5 class="h5 mb-2">關於鏡片</h5>
+					<p class="text-left text-black">使用世界知名頂級品牌，抗UV、防汙鍍膜薄型非球面鏡片。</p>
+				</li>
+			</ul>
+		</div>
+	</section>
 
-<h1>
-  這是一段話 abc
-</h1>
+	<!-- Classic -->
+	<section class="classic container-padding">
+		<div class="container">
+			<h4 class="h4 text-center">經典系列鏡框</h4>
+			<ul class="classic__list d-flex fw-wrap">
+				<li>
+					<a href="#" class="classic__item">
+						<div class="classic__img">
+							<img src="assets/images/product-1.png" alt="product-1">
+						</div>
+						<div class="classic__feature d-flex align-items-center text-secondary">
+							<span class="material-icons-outlined classic__icon">auto_awesome</span>
+							<!-- <img class="classic__icon" src="assets/images/icon-sun.svg" alt="icon-sun"> -->
+							<p class="text-italic text-uppercase fw-black">optical</p>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#" class="classic__item">
+						<div class="classic__img">
+							<img src="assets/images/product-2.png" alt="product-2">
+						</div>
+						<div class="classic__feature d-flex align-items-center text-secondary">
+							<span class="material-icons-outlined classic__icon">light_mode</span>
+							<!-- <img class="classic__icon" src="assets/images/icon-sun.svg" alt="icon-sun"> -->
+							<p class="text-italic text-uppercase fw-black">sunglasses</p>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#" class="classic__item">
+						<div class="classic__img">
+							<img src="assets/images/product-3.png" alt="product-3">
+						</div>
+						<div class="classic__feature d-flex align-items-center text-secondary">
+							<span class="material-icons-outlined classic__icon">flash_on</span>
+							<!-- <img class="classic__icon" src="assets/images/icon-thunder.svg" alt="icon-thunder"> -->
+							<p class="text-italic text-uppercase fw-black">functional</p>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</section>
 
-<div class="box"></div>
+	<!-- Product -->
+	<section class="product container-padding">
+		<div class="container text-center">
+			<h4 class="h4 text-white">聯名設計鏡框</h4>
+			<ul class="product__list d-flex justify-content-between fw-wrap">
+				<li class="product__item">
+					<a href="#">
+						<img src="assets/images/product-8.png" alt="product-8.png">
+						<p class="product__item__name text-primary fw-bold">Double A+</p>
+					</a>
+				</li>
+				<li class="product__item">
+					<a href="#">
+						<img src="assets/images/product-9.png" alt="product-9.png">
+						<p class="product__item__name text-primary fw-bold">YOUTH</p>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</section>
+
+	<!-- Testominal -->
+	<section class="testominal">
+		<div class="container container-padding">
+			<h4 class="h4 text-center">顧客推薦</h4>
+			<ul class="card__list d-flex justify-content-between fw-wrap">
+				<li class="card__item border-radius shadow">
+					<a href="#">
+						<img class="card__img border-radius-top d-inline-block" src="assets/images/rec-1.png" alt="testominal-1">
+						<div class="card__body d-flex fd-column justify-content-between text-gray-1">
+							<div>
+								<h6 class="mb-2 fs-2">Jessy</h6>
+								<p class="card__text">眼鏡品質優良，下次還會想來這邊購買！</p>
+							</div>
+							<div class="fs-2 text-gray-2">2021/06/20</div>
+						</div>
+					</a>
+				</li>
+				<li class="card__item border-radius shadow">
+					<a href="#">
+						<img class="card__img border-radius-top d-inline-block" src="assets/images/rec-2.png" alt="testominal-2">
+						<div class="card__body d-flex fd-column justify-content-between text-gray-1">
+							<div>
+								<h6 class="mb-2 fs-2">凱倫</h6>
+								<p class="card__text">做工細緻、鏡架很輕盈，待久也不會覺得有負擔，推薦給大家！</p>
+							</div>
+							<div class="fs-2 text-gray-2">2021/04/18</div>
+						</div>
+					</a>
+				</li>
+				<li class="card__item border-radius shadow">
+					<a href="#">
+						<img class="card__img border-radius-top d-inline-block" src="assets/images/rec-3.png" alt="testominal-3">
+						<div class="card__body d-flex fd-column justify-content-between text-gray-1">
+							<div>
+								<h6 class="mb-2 fs-2">悠悠</h6>
+								<p class="card__text">謝謝客服人員的詳細回答，成功買到了喜歡的眼鏡，下次會再回購！</p>
+							</div>
+							<div class="fs-2 text-gray-2">2020/12/25</div>
+						</div>
+					</a>
+				</li>
+				<li class="card__item border-radius shadow">
+					<a href="#">
+						<img class="card__img border-radius-top d-inline-block" src="assets/images/rec-4.png" alt="testominal-4">
+						<div class="card__body d-flex fd-column justify-content-between text-gray-1">
+							<div>
+								<h6 class="mb-2 fs-2">Kyuan</h6>
+								<p class="card__text">服務很好，品質沒有任何問題，非常喜歡。</p>
+							</div>
+							<div class="fs-2 text-gray-2">2020/10/31</div>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</section>
+
+	<!-- Contact -->
+	<section class="contact bg-info text-black">
+		<div class="container container-sm container-padding">
+			<h4 class="h4 h4-margin-sm text-center">聯絡我們</h4>
+			<p class="contact__text">我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。</p>
+			<form action="#" class="text-center">
+				<div class="form-group text-left">
+					<label for="fullName" class="form__label">姓名</label>
+					<input class="form__input" id="fullName" type="text" name="fullName" placeholder="陳小明">
+				</div>
+				<div class="form-group text-left">
+					<label for="phone" class="form__label">聯絡電話</label>
+					<input class="form__input" id="phone" type="tel" name="phone" placeholder="0912-345-678">
+				</div>
+				<div class="form-group text-left">
+					<label for="email" class="form__label">電子郵件</label>
+					<input class="form__input" id="email" type="email" name="email" placeholder="example@email.com">
+				</div>
+				<div class="form-group text-left">
+					<label for="message" class="form__label">意見反應</label>
+					<textarea class="form__input form__textarea" id="message" name="message" placeholder="請輸入您的意見我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。"></textarea>
+				</div>
+				<div class="form__privacy text-left d-flex">
+					<input class="form-check-input mr-1 mt-1" type="checkbox" name="privacy" value="confirm">
+					<p>我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</p>
+				</div>
+				
+				<button type="submit" class="btn btn-primary">確認送出</button>
+			</form>
+		</div>
+	</section>
+
+</main>
+
+
+
+
+
+
+
+
+
+
+
+

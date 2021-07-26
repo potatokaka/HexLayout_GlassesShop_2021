@@ -1,0 +1,291 @@
+// Grid
+.container {
+    width: 69.375rem; // 1110
+    padding: 0;
+    margin: 0 auto;
+
+    @include pad {
+        width: 100%;
+        padding: 0 2.5rem; // 40
+    }
+
+    @include mobile {
+        padding: 0 1rem; // 16
+    }
+}
+.container-sm {
+	width: 45.625rem; //730 
+	margin: 0 auto;
+	@include pad {
+        width: 65.4%;
+	}
+	@include mobile {
+        width: 100%; //450 
+    }
+}
+.container-padding {
+  padding: 3.75rem 0 5rem 0; // 60 50
+    @include pad {
+	  padding: 2.5rem 2.5rem 3.5rem 2.5rem; // 40 56
+    }
+
+    @include mobile {
+		padding: 2rem 1rem 2.5rem 1rem; // 32 16 40 16
+    }
+}
+
+/* Utility --------------------*/
+// Spacer
+$space: (
+  "1": 0.25rem,   // 4
+  "2": 0.5rem,    // 8
+  "3": 0.75rem,   // 12
+  "4": 0.875rem,  // 14
+  "5": 1rem,      // 16
+  "6": 1.25rem,   // 20
+  "7": 1.5rem,    // 24
+  "8": 1.75rem,   // 28
+  "9": 1.875rem,  // 30
+  "10": 2rem,     // 32
+  "11": 2.25rem,  // 36
+  "12": 2.5rem,   // 40
+  "13": 2.75rem,  // 44
+  "14": 3rem,     // 48
+  "15": 3.5rem,   // 56
+  "16": 3.75rem,  // 60
+  "17": 4rem,     // 64
+  "18": 4.25rem,  // 68
+  "19": 4.5rem,   // 72
+  "20": 5rem,     // 80
+  "21": 5.5rem,   // 88
+  "22": 9rem,     // 144
+);
+
+// Margin & Padding
+@each $key, $value in $space {
+  .mt-#{$key} {
+    margin-top: $value;
+  }
+  .mb-#{$key} {
+    margin-bottom: $value;
+  }
+  .ml-#{$key} {
+    margin-left: $value;
+  }
+  .mr-#{$key} {
+    margin-right: $value;
+  }
+  .pt-#{$key} {
+    padding-top: $value;
+  }
+  .pb-#{$key} {
+    padding-bottom: $value;
+  }
+  .pl-#{$key} {
+    padding-left: $value;
+  }
+  .pr-#{$key} {
+    padding-right: $value;
+  }
+  .py-#{$key} {
+    padding-top: $value;
+    padding-bottom: $value;
+  }
+  .px-#{$key} {
+    padding-left: $value;
+    padding-right: $value;
+  }
+}
+
+// Display
+.d-flex {
+    display: flex;
+}
+.d-block {
+    display: block;
+}
+.d-inline-block {
+    display: inline-block;
+}
+
+// Flexbox
+.justify-content-center {
+    justify-content: center;
+}
+.justify-content-between {
+    justify-content: space-between;
+}
+.align-items-start{
+    align-items: flex-start;
+}
+.align-items-center {
+    align-items: center;
+}
+.align-content-between {
+	align-content: space-between;
+}
+.fd-column {
+    flex-direction: column;
+}
+.fw-wrap {
+   flex-wrap: wrap; 
+}
+
+// Text Setting
+.text {
+  &-white {
+    color: white;
+  }
+  &-primary {
+    color: $primary;
+  }
+  &-secondary {
+    color: $secondary;
+  }
+  &-info {
+    color: $info;
+  }
+  &-black {
+    color: $black;
+  }
+  &-gray-1 {
+	  color :$gray-1;
+  }
+  &-gray-2 {
+	color :$gray-2;
+	}
+  &-muted {
+    opacity: 20%;
+  }
+  &-left {
+    text-align: left;
+  }
+  &-center {
+    text-align: center;
+  }
+  &-right {
+    text-align: right;
+  }
+  &-italic {
+    font-style: italic;
+  }
+  &-justify {
+    text-align: justify;
+  }
+  &-uppercase {
+	text-transform: uppercase;
+  }
+}
+
+// Font Size
+$font-size: (
+  "1": 0.75rem,   // 12
+  "2": 0.875rem,  // 14
+  "3": 1rem,      // 16
+  "4": 1.125rem,  // 18
+  "5": 1.25rem,   // 20
+  "6": 1.5rem,    // 24
+  "7": 1.75rem,   // 28
+  "8": 2rem,      // 32
+  "9": 2.25rem,   // 36
+  "10": 3rem,     // 48
+  "11": 2.25rem,  // 64
+  "12": 4.5rem,   // 72
+);
+@each $key, $value in $font-size {
+    .fs-#{ $key } {
+        font-size: $value;
+    }
+}
+
+//　Font Weight
+.fw-medium {
+    font-weight: 500;
+}
+.fw-bold {
+    font-weight: 700;
+}
+.fw-black {
+    font-weight: 900;
+}
+
+// Line Height
+.lh-sm {
+    line-height: 1; 
+}
+.lh-md {
+    line-height: 1.5;
+}
+.lh-lg {
+    line-height: 1.75;
+}
+.lh-xl {
+    line-height: 2;
+}
+.lh-xxl {
+    line-height: 2.1;
+}
+// Background Color
+.bg-black {
+    background: #000;
+}
+.bg-primary {
+    background: $primary;
+}
+.bg-secondary {
+    background: $secondary;
+}
+.bg-info {
+    background: $info;
+}
+
+// Border
+.border {
+    border: 1px solid #000;
+
+    &-top {
+        border-top: 1px solid #000;
+    }
+    &-bottom {
+        border-bottom: 1px solid #000;
+    }
+    &-left {
+        border-bottom: 1px solid #000;
+    }
+    &-2 {
+        border-width: 2px;
+    }
+    &-white {
+        border-color: white;
+    }
+    &-gray {
+        border-color: $gray-3;
+	}
+	&-radius {
+		border-radius: 0.25rem; // 4
+	}
+	&-radius-top {
+		border-radius: 0.25rem 0.25rem 0 0; // 4
+	}
+}
+
+// Layout
+.h-100 {
+    height: 100vh;
+}
+.w-100 {
+    width: 100%;
+}
+.w-50 {
+    width: 50%;
+}
+
+// Shadow
+.shadow {
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.29);
+}
+
+// Opacity
+.opacity-70 {
+    opacity: 70%;
+}

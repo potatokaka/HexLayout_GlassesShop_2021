@@ -1,0 +1,14 @@
+// RWD 
+@mixin pad {
+    // 雙欄 
+    @media (max-width: 992px) {
+        @content;
+    }
+}
+
+@mixin mobile { 
+    // 單欄 
+    @media (max-width: 767px) {
+        @content;
+    }
+}
