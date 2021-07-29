@@ -1,7 +1,7 @@
 /* Index ------------------------ */
 // Hero Banner
 .heroBanner {
-    background: url(/assets/images/banner.png) no-repeat center center;
+    background: url(../images/banner.png) no-repeat center center;
     background-size: cover;
     height: 52.5rem;
     @include pad {
@@ -113,7 +113,7 @@
 
 // Product
 .product {
-    background: url(/assets/images/bg.png) no-repeat center center;
+    background: url(../images/bg.png) no-repeat center center;
     background-size: cover;
 }
 .product__item {
