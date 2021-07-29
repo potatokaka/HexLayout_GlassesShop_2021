@@ -1,0 +1,63 @@
+// category
+.category__item {
+    margin-left: 0px;
+    &:not(:first-child) {
+        margin-left: -1px;
+    }
+    a {
+        &.active, &:hover {
+            color: lighten(#000000, 20%);
+            border-bottom: 8px $secondary solid;
+
+            @include mobile {
+                border-bottom: 4px $secondary solid;
+            }
+        }
+    }
+}
+.category__link {
+    font-size: $fs-8; // 32
+    line-height: 3;
+    @include pad {
+        font-size: $fs-6; // 24
+        line-height: 2.5;
+    }
+    @include mobile {
+        font-size: $fs-2; // 14
+        line-height: 2.14;
+    }
+}
+.category__icon {
+    font-size: 2.75rem; // 44
+    margin-right: 0.625rem; // 10
+    @include pad {
+        font-size: $fs-7; // 28
+    }
+    @include mobile {
+        font-size: $fs-2; // 14
+        margin-right: 0.168rem; // 2.7
+    }
+}
+
+// productBanner
+.productBanner__item {
+    @include mobile {
+        height: 9.25rem; // 148
+    }
+}
+
+// productList
+.title_en {
+    font-size: 2.625rem; // 42
+    margin-top: 5rem; // 80
+    font-weight: 500;
+    @include pad {
+        font-size: $fs-8; // 32
+        margin-top: 3.5rem; // 56
+    }
+    @include mobile {
+        font-size: $fs-5; // 20
+        margin-top: 2rem; // 32
+        line-height: 1.7;
+    }
+}

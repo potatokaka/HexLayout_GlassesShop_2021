@@ -1,14 +1,17 @@
 // RWD 
+$pad: 992px;
+$mobile: 767px;
+
 @mixin pad {
     // 雙欄 
-    @media (max-width: 992px) {
+    @media (max-width: $pad) {
         @content;
     }
 }
 
 @mixin mobile { 
     // 單欄 
-    @media (max-width: 767px) {
+    @media (max-width: $mobile) {
         @content;
     }
 }

@@ -1,0 +1,23 @@
+// Button
+.btn {
+    padding: 1rem 9rem; // 16 144
+    color: white;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+
+    &-primary {
+        background: $secondary;
+        &:hover {
+            background: $primary;
+            color: white;
+        }
+    }
+    @include pad {
+        padding: 0.625rem 4.75rem; // 10 76
+    }
+    @include mobile {
+        padding: 0.5rem 3.5rem; // 8 56
+    }
+}

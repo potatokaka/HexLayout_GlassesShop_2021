@@ -1,8 +1,16 @@
 @import 'variables';
 @import 'mixin';
 @import 'reset';
-@import 'utilities';
-@import 'base';
-@import 'component';
-@import 'page';
 
+@import 'utilities';
+@import 'grid';
+@import 'base';
+@import 'layout';
+
+@import 'components/button';
+@import 'components/card';
+@import 'components/form';
+@import 'components/pagination';
+
+@import 'pages/index';
+@import 'pages/product';

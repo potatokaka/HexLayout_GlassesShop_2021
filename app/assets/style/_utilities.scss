@@ -1,68 +1,6 @@
-// Grid
-.container {
-    width: 69.375rem; // 1110
-    padding: 0;
-    margin: 0 auto;
-
-    @include pad {
-        width: 100%;
-        padding: 0 2.5rem; // 40
-    }
-
-    @include mobile {
-        padding: 0 1rem; // 16
-    }
-}
-.container-sm {
-	width: 45.625rem; //730 
-	margin: 0 auto;
-	@include pad {
-        width: 65.4%;
-	}
-	@include mobile {
-        width: 100%; //450 
-    }
-}
-.container-padding {
-  padding: 3.75rem 0 5rem 0; // 60 50
-    @include pad {
-	  padding: 2.5rem 2.5rem 3.5rem 2.5rem; // 40 56
-    }
-
-    @include mobile {
-		padding: 2rem 1rem 2.5rem 1rem; // 32 16 40 16
-    }
-}
-
-/* Utility --------------------*/
-// Spacer
-$space: (
-  "1": 0.25rem,   // 4
-  "2": 0.5rem,    // 8
-  "3": 0.75rem,   // 12
-  "4": 0.875rem,  // 14
-  "5": 1rem,      // 16
-  "6": 1.25rem,   // 20
-  "7": 1.5rem,    // 24
-  "8": 1.75rem,   // 28
-  "9": 1.875rem,  // 30
-  "10": 2rem,     // 32
-  "11": 2.25rem,  // 36
-  "12": 2.5rem,   // 40
-  "13": 2.75rem,  // 44
-  "14": 3rem,     // 48
-  "15": 3.5rem,   // 56
-  "16": 3.75rem,  // 60
-  "17": 4rem,     // 64
-  "18": 4.25rem,  // 68
-  "19": 4.5rem,   // 72
-  "20": 5rem,     // 80
-  "21": 5.5rem,   // 88
-  "22": 9rem,     // 144
-);
-
+/* Spaceing ------------------------*/
 // Margin & Padding
-@each $key, $value in $space {
+@each $key, $value in $spacers {
   .mt-#{$key} {
     margin-top: $value;
   }
@@ -148,11 +86,23 @@ $space: (
   &-black {
     color: $black;
   }
-  &-gray-1 {
-	  color :$gray-1;
+  &-gray-100 {
+	  color :$gray-100;
   }
-  &-gray-2 {
-	color :$gray-2;
+  &-gray-200 {
+	  color :$gray-200;
+  }
+  &-gray-300 {
+	  color :$gray-300;
+  }
+  &-gray-400 {
+	  color :$gray-400;
+  }
+  &-gray-500 {
+	  color :$gray-500;
+  }
+  &-gray-600 {
+	  color :$gray-600;
 	}
   &-muted {
     opacity: 20%;
@@ -178,21 +128,7 @@ $space: (
 }
 
 // Font Size
-$font-size: (
-  "1": 0.75rem,   // 12
-  "2": 0.875rem,  // 14
-  "3": 1rem,      // 16
-  "4": 1.125rem,  // 18
-  "5": 1.25rem,   // 20
-  "6": 1.5rem,    // 24
-  "7": 1.75rem,   // 28
-  "8": 2rem,      // 32
-  "9": 2.25rem,   // 36
-  "10": 3rem,     // 48
-  "11": 2.25rem,  // 64
-  "12": 4.5rem,   // 72
-);
-@each $key, $value in $font-size {
+@each $key, $value in $font-sizes {
     .fs-#{ $key } {
         font-size: $value;
     }
@@ -225,6 +161,7 @@ $font-size: (
 .lh-xxl {
     line-height: 2.1;
 }
+
 // Background Color
 .bg-black {
     background: #000;
@@ -237,6 +174,12 @@ $font-size: (
 }
 .bg-info {
     background: $info;
+}
+.bg-product-1 {
+  background: $product-1;
+}
+.bg-product-2 {
+  background: $product-2;
 }
 
 // Border
@@ -258,13 +201,16 @@ $font-size: (
     &-white {
         border-color: white;
     }
-    &-gray {
-        border-color: $gray-3;
-	}
-	&-radius {
+    &-gray-200 {
+      border-color: $gray-200;
+  }
+    &-gray-400 {
+        border-color: $gray-400;
+    }
+	&-rounded-sm {
 		border-radius: 0.25rem; // 4
 	}
-	&-radius-top {
+	&-rounded-top {
 		border-radius: 0.25rem 0.25rem 0 0; // 4
 	}
 }
@@ -279,7 +225,9 @@ $font-size: (
 .w-50 {
     width: 50%;
 }
-
+.w-33 {
+  width: 33.33%;
+}
 // Shadow
 .shadow {
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.29);
@@ -288,4 +236,16 @@ $font-size: (
 // Opacity
 .opacity-70 {
     opacity: 70%;
+}
+
+// Image
+.img-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.img-cover-auto {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }

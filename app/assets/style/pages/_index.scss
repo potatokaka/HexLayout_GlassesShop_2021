@@ -1,3 +1,4 @@
+/* Index ------------------------ */
 // Hero Banner
 .heroBanner {
     background: url(/assets/images/banner.png) no-repeat center center;
@@ -8,14 +9,14 @@
     }
 }
 .slogan {
-    font-size: 2.25rem; // 36
+    font-size: $fs-9; // 36  2.25rem
     line-height: 1.5;
     
     @include pad {
-        font-size: 1.25rem; // 20
+        font-size: $fs-5; // 20  1.25rem
     }
     @include mobile {
-        font-size: 1rem; // 16
+        font-size: $fs-3; // 16  1rem
         line-height: 1.875;  // 30
     }
 }
@@ -41,23 +42,15 @@
 }
 
 .feature__item {
-    width: 22.97%;
     margin-bottom: 5rem;
     @include pad {
-        width: 50%;
         padding: 0 3.8rem;
         margin-bottom: 3.5rem;
     }
     @include mobile {
-        width: 100%;
         padding: 0 2.75rem; // 44
         margin-bottom: 2.75rem; // 44
     }
-    // img {
-    //     width: 4rem;
-    //     height: 4rem;
-    //     object-fit: cover;
-    // }
 }
 .feature__icon {
     font-size: 5.25rem;
@@ -97,10 +90,10 @@
     // width: 40.09%; // 445
     width: 27.8125rem; // 445
     padding-left: 2rem;
-    font-size: 3rem;
+    font-size: $fs-10; // 3rem
     @include pad {
         width: 43.31%; // 298
-        font-size: 1.75rem; // 28
+        font-size: $fs-7; // 28  1.75rem
     }
     @include mobile {
         position: absolute;
@@ -114,7 +107,7 @@
     font-size: 2.75rem; // 44
     margin-right: 0.625rem; // 10
     @include pad {
-        font-size: 2.25rem; // 36
+        font-size: $fs-9; // 36  2.25rem
     }
 }
 
@@ -124,12 +117,12 @@
     background-size: cover;
 }
 .product__item {
-    width: 49%;
+    // width: 49%;
     position: relative;
     background: white;
-    @include mobile {
-        width: 100%;
-    }
+    // @include mobile {
+    //     width: 100%;
+    // }
     img {
         opacity: 0.5;
     }
@@ -140,13 +133,13 @@
     }
 }
 .product__item__name {
-    font-size: 4.5rem; // 72
+    font-size: $fs-12; // 72 4.5rem
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     @include pad {
-        font-size: 2rem; // 32
+        font-size: $fs-8; // 32 2rem
     }
 }
 
